@@ -22,7 +22,7 @@ body {
   font-family: monospace;
   overflow: hidden; /* Ẩn văn bản khi bắt đầu */
   border-right: 0.15em solid orange; /* Hiển thị dấu nháy đang gõ */
-  white-space: nowrap; /* Ngăn văn bản xuống dòng */
+  white-space: wrap; /* Ngăn văn bản xuống dòng */
 
   font-size: 1.5em; /* Kích thước chữ */
   margin: center; /* Canh giữa */
