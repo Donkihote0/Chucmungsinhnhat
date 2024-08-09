@@ -1,0 +1,52 @@
+body {
+  justify-content: center;
+  padding-top: 10em;
+  background-color: #9effb5;
+}
+
+.typewriter h1 {
+  color: #ce3838;
+  font-family: monospace;
+  overflow: hidden; /* Ẩn văn bản khi bắt đầu */
+  border-right: 0.15em solid orange; /* Hiển thị dấu nháy đang gõ */
+  white-space: nowrap; /* Ngăn văn bản xuống dòng */
+
+  font-size: 1.5em; /* Kích thước chữ */
+  margin: 1 auto; /* Canh giữa */
+  letter-spacing: 0.15em; /* Khoảng cách giữa các ký tự */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.typewriter h2 {
+  color: #ce3838;
+  font-family: monospace;
+  overflow: hidden; /* Ẩn văn bản khi bắt đầu */
+  border-right: 0.15em solid orange; /* Hiển thị dấu nháy đang gõ */
+  white-space: nowrap; /* Ngăn văn bản xuống dòng */
+
+  font-size: 1.5em; /* Kích thước chữ */
+  margin: center; /* Canh giữa */
+  letter-spacing: 0.15em; /* Khoảng cách giữa các ký tự */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Hiệu ứng typing */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300%;
+  }
+}
+
+/* Hiệu ứng con trỏ typewriter */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  40% {
+    border-color: rgb(47, 0, 255);
+  }
+}
